@@ -1,0 +1,601 @@
+$timeline-gradient: linear-gradient(to right, #EA00F8 0%, #62066E 100%);
+.paragraph-container {
+  margin: 112px 0;
+
+  .conecta-title {
+    color: $color-purple-extra;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 0 28px;
+  }
+
+  .conecta-paragraph {
+    color: $color-purple-extra;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10%;
+    font-size: 20px;
+  }
+}
+
+.values {
+  .values-container {
+    justify-content: center;
+    .values-box {
+      border: 3px solid $color-pink;
+      margin: 12px 36px;
+      border-radius: 16px;
+      font-weight: 500;
+      max-width: 200px;
+
+      .values-title {
+        margin: 0 10%;
+        padding: 13px 0;
+        text-align: center;
+        color: $color-purple-extra;
+        border-bottom: 2px solid $color-pink;
+      }
+
+      .values-text {
+        color: $color-purple-extra;
+        padding: 8px 12px;
+        margin-top: 16px;
+        text-align: center;
+      }
+
+      .values-list {
+        width: 90%;
+        text-align: center;
+        list-style: none;
+        margin-top: 16px !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.timeline-container {
+  padding: 64px 0;
+  margin: 64px 0;
+  background: $timeline-gradient;
+  
+  .timeline-title {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 24px 0;
+  }
+
+  .timeline-inner-container {
+    display: flex;
+    padding: 18px 0;
+    position: relative;
+
+    @include width(md) {
+      padding: 11px 0;
+    }
+    @include width(xs) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0;
+    }
+
+    &:first-child {
+      .timeline-box {
+        &:first-child {
+          &:after {
+            content: inherit !important;
+          }
+          &:before {
+            content: inherit !important;
+          }
+        }
+      }
+    }
+    .timeline-box {
+      display: flex;
+      align-items: center;
+      max-width: 50%;
+      line-height: 1.2;
+      position: relative;
+
+      @include width(md) {
+        padding: 8px 0;
+      }
+      @include width(xs) {
+        max-width: 100%;
+        max-height: 96px;
+        min-height: 30%;
+        margin: 16px 10% 28px 10%;
+        padding-left: 24px;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          border-color: #bababa;
+          border-style: dashed;
+          user-select: none;
+          pointer-events: none;
+        }
+
+        &:nth-child(even) {
+          &:before {
+            left: 48px;
+            top: -21px;
+            width: 90%;
+            height: 59%;
+            border-width: 2px 2px 0 0;
+            border-radius: 0 30px 0 0;
+          }
+          &:after {
+            left: 51px;
+            bottom: -24px;
+            width: 89%;
+            height: 93%;
+            border-width: 0 2px 2px 0;
+            border-radius: 0 0 30px 0;
+          }
+        }
+        &:nth-child(odd) {
+          &:before {
+            left: 0;
+            top: -22px;
+            width: 24%;
+            height: 53%;
+            border-width: 2px 0px 0 2px;
+            border-radius: 39px 0 0 0;
+          }
+          &:after {
+            left: 0;
+            bottom: -24px;
+            width: 54px;
+            height: 93%;
+            border-width: 0px 0px 2px 2px;
+            border-radius: 0 0 0 30px;
+          }
+        }
+      }
+      .icon-box {
+        position: relative;
+        
+        .inner-box-year {
+          text-align: center;
+          color: #fff;
+          font-weight: 550;
+        }
+        .icon-inner-box {
+          background: $gradient-orange;
+          width: max-content;
+          border-radius: 50%;
+          border: 4px solid #fff;
+          img {
+            width: 84px;
+            height: 84px;
+            padding: 18px;
+
+            @include width(mg) {
+              width: 74px;
+              height: 74px;
+              padding: 18px;
+
+            }
+            @include width(md) {
+              width: 64px;
+              height: 64px;
+              padding: 18px;
+            }
+            @include width(sm) {
+              width: 54px;
+              height: 54px;
+              padding: 10px;
+            }
+            @include width(xs) {
+              width: 44px;
+              height: 44px;
+              padding: 10px;
+            }
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -31px;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #fff;
+          z-index: 2;
+
+          @include width(md) {
+            bottom: -33px;
+          }
+          @include width(xs) {
+            bottom: -36px;
+          }
+        }
+      }
+      .timeline-description {
+        color: #fff;
+        font-weight: 550;
+        margin: 0;
+        padding: 0 12px 0 8px;
+        @include width(mg) {
+          padding: 0 8px 0 8px;
+          font-size: 14px;
+        }
+        @include width(md) {
+          margin: 8px 6px 0 12px;
+          font-size: 13px;
+          padding: 4px 0;
+        }
+        @include width(sm) {
+          margin: 0;
+          padding: 0 12px 0 8px;
+          font-size: 13px;
+        }
+        @include width(xs) {
+          font-size: 12px;
+        }
+      }
+    }
+    &:before {
+      content: '';
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 53%;
+      position: absolute;
+      border-color: #bababa;
+      border-style: dashed;
+      border-width: 2px 2px 2px 0;
+      user-select: none;
+      pointer-events: none;
+      @include width(xs) {
+        content: inherit;
+      }
+    }
+    &:after {
+      content: '';
+      right: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 54%;
+      position: absolute;
+      border-color: #bababa;
+      border-style: dashed;
+      border-width: 0 2px 2px 0;
+      user-select: none;
+      pointer-events: none;
+      @include width(xs) {
+        content: inherit;
+      }
+    }
+
+    &:nth-child(1) {
+      
+      &:after {
+        content: inherit !important;
+      }
+      &::before {
+        content: inherit !important;
+      }
+    }
+    &:nth-child(even) {
+      margin-right: 10%;
+
+      @include width(md) {
+        margin-right: 0;
+        margin-left: 0%;
+        padding-left: 3%;
+      }
+      @include width(sm) {
+        margin-right: 0;
+        padding-left: 88px;
+      }
+      @include width(xs) {
+        padding: 0;
+        margin: 0;
+      }
+      .timeline-box {
+        
+        &:nth-child(2) {
+          order: -1;
+          
+          @include width(xs) {
+            order: 0;
+          }
+        } 
+      }
+      &:before {
+        content: '';
+        border-radius: 0 74px 0 0;
+        border-width: 2px 2px 0 0;
+        width: 76%;
+        margin: 0;
+
+        @include width(mg) {
+          width: 78%;
+        }
+        @include width(md) {
+          width: 98%;
+        }
+        @include width(sm) {
+          width: 80%;
+          margin: 0;
+          right: -12px;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+      &:after {
+        content: '';
+        border-radius: 0 0 60px 0;
+        border-width: 0 2px 2px 0px;
+        width: 16%;
+        bottom: -2px;
+        @include width(mg) {
+          width: 17%;
+        }
+        @include width(md) {
+          width: 21%;
+        }
+        @include width(sm) {
+          width: 27%;
+          bottom: -2px;
+          right: -12px;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      margin-left: 10%;
+      padding-left: 36px;
+      
+      @include width(mg) {
+        margin-left: 8%;
+        padding-left: 24px;
+      }
+      @include width(md) {
+        margin-left: -6%;
+        padding-left: 0;
+      }
+      @include width(xs) {
+        padding: 0;
+        margin: 0;
+      }
+      &:before {
+        content: '';
+        border-radius: 60px 0 0 0;
+        border-width: 2px 0 0 2px;
+        width: 87%;
+        left: -82px;
+        @include width(md) {
+          left: -32px;
+        }
+        @include width(sm) {
+          width: 75%;
+          left: -8px;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+      &:after {
+        content: '';
+        border-radius: 0 0 0 60px;
+        border-width: 0 0 2px 2px;
+        width: 28%;
+        left: -83px;
+        @include width(mg) {
+          width: 32%;
+        }
+        @include width(md) {
+          width: 16%;
+          left: -32px;
+        }
+        @include width(sm) {
+          width: 14%;
+          left: -8px;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+    }
+    &:last-child:nth-child(even) {
+      &:after {
+        content: '';
+        width: 94%;
+        @include width(mg) {
+          width: 93%;
+        }
+        @include width(md) {
+          width: 89%;
+        }
+        @include width(sm) {
+          width: 80%;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+    }
+    &:last-child:nth-child(odd) {
+      &:after {
+        content: '';
+        width: 73%;
+        @include width(mg) {
+          width: 73%;
+        }
+        @include width(md) {
+          width: 64%;
+        }
+        @include width(sm) {
+          width: 64%;
+        }
+        @include width(xs) {
+          content: inherit;
+        }
+      }
+    }
+    &.timeline-one-child {
+      &:last-child:nth-child(odd) {
+        &:after {
+          content: '';
+          width: 26%;
+          @include width(md) {
+            width: 13%;
+          }
+          @include width(sm) {
+            width: 13%;
+          }
+          @include width(xs) {
+            content: inherit;
+          }
+        }
+      }
+      &:last-child:nth-child(even) {
+        justify-content: flex-end;
+        &:after {
+          content: '';
+          width: 43%;
+          @include width(sm) {
+            width: 38%;
+          }
+          @include width(xs) {
+            content: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.store {
+  .store-title {
+
+    color: $color-purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 0;
+
+    i {
+      background: linear-gradient(to right, #ed07f9 0%, $color-purple 100%);
+      padding-right: 10px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .store-image {
+    width: 100%;
+    height: 200px;
+
+    img {
+      object-fit: cover;
+      position: relative;
+      height: 200px;
+    }
+    @include width(mg) {
+      width: 100%;
+      height: auto;
+
+      img {
+        height: 150px;
+      }
+    }
+    @include width(md) {
+      width: 100%;
+      height: auto;
+
+      img {
+        height: 150px;
+      }
+    }
+    @include width(sm) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include width(xs) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .store-city-name-container {
+    max-width: 248px;
+    padding: 1px;
+    position: relative;
+    margin: 0 auto;
+
+    @include width(md) {
+      max-width: 210px;
+    }
+    @include width(sm) {
+      max-width: 210px;
+    }
+    .store-city-name {
+      text-align: center;
+      color: $color-purple;
+      background: #fff;
+      padding: 13px 1px;
+      margin: 1px 0 0 1px;
+      font-weight: 600;
+      border-radius: 10px;
+      border: 2px solid $color-pink;
+      @include width(mg) {
+        padding: 10px 8px;
+        font-size: 18px;
+      }
+      @include width(md) {
+        padding: 10px 0;
+        font-size: 1.2em;
+      }
+      @include width(sm) {
+        padding: 10px 0;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .store-city-description {
+    font-size: 15px;
+    color: $color-purple;
+    text-align: center;
+    padding: 0 30px;
+    font-weight: 650;
+
+    @include width(mg) {
+      padding: 0 15px;
+    }
+    @include width(md) {
+      padding: 0 15px;
+    }
+    @include width(sm) {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 575px) and (min-width: 400px) {
+  .store {
+
+    .store-image {
+      width: 55%;
+    }
+  }
+}

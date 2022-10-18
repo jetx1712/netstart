@@ -1,0 +1,441 @@
+
+
+body {
+	background-image: url("../../img/landings/indicate/Fundo.png"); 
+	background-size:100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+.indique{
+	
+	display: flex;
+	text-align:center;
+
+}
+
+.novidade{
+	text-align: center;
+    color: white;
+    font-size: 52px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-transform: uppercase;
+    /* left: 220px; */
+	margin-top: 15%;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+	
+}
+
+@media (max-width: 599px) {
+	.novidade{
+		font-size: 30px;
+	}
+
+	.container_img{
+		margin-top: 300px;
+	}
+}
+
+
+
+.amarelo{
+	color: yellow;
+}
+
+.form{
+	background-color: none;
+	border-radius: 8px;
+	display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.preencha{
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to right, #B700F9, #480073);
+	padding: 45px;
+	padding-left: 58px;
+	padding-right: 58px;
+	font-size: 50px;
+	border-radius: 25px;
+}
+
+.caixa{
+	background-color: white;
+	/* padding-left: 55px; */
+	padding-top: 150px;
+	/* padding-right: 55px; */
+	padding-bottom: 180px;
+	border: 4px solid #8B008B;
+	border-radius: 30px;
+	position: relative;
+}
+
+.inputUser{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.1rem;
+	left: 10px;
+	padding: 15px;
+	width: 100%;
+	border-radius: 2px;
+	border-color: 	#DCDCDC;
+}
+
+.botao{
+	position: absolute;
+	margin-top: 40px;
+
+	font-size: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border:2px  solid  #4B0082;
+}
+
+.inputbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.label1{
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: #4F4F4F;
+}
+
+.enviar{
+	font-size: 20px;
+	color: #8B008B;
+}
+
+.sombra{
+	max-width: 48%;
+	position: absolute;
+	top: 2760px;
+	left: 355px;
+}
+
+
+.seta{
+	width: 15rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dica{
+	position: absolute;
+	display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.frase-dica{
+	text-align: center;
+	color: #DC52FF;
+	font-size: 2.5rem;
+	font-weight: 400;
+
+}
+
+.roxo{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+footer{
+	width: 100%;;
+}
+
+.conecta{
+
+	justify-content: center;
+	 max-width: 550px; 
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.conecta-1{
+	display: flex;
+}
+
+	/* @media(max-width: 1200px){
+		.indique{
+			margin-left: 55px;
+			margin-top: 700px;
+		}
+		.novidade{
+			margin-top: 1200px;
+			margin-left: 180px;
+		}
+		.form{
+			margin-top: 1600px;
+			margin-left: 230px;
+		}
+		.sombra{
+			max-width: 60%;
+			margin-top: 2620px;
+			margin-left: 230px;
+		}
+		.seta{
+			margin-top: 2900px;
+			margin-left: 450px;
+		}
+		.dica{
+			margin-top: 3100px;
+			margin-left: 200px;
+		}
+		.conecta{
+			margin-top: 3400px;
+		}
+	} */
+
+
+	/* @media(max-width: 1000px){
+	.indique{
+		margin-left: 50px;
+		margin-top: 600px;
+	}
+	.novidade{
+		margin-top: 1050px;
+		margin-left: 80px;
+	}
+	.form{
+		margin-top: 1400px;
+		margin-left: 150px;
+	}
+	.sombra{
+		max-width: 70%;
+		margin-top: 2420px;
+		margin-left: 155px;
+	}
+	.seta{
+		margin-top: 2700px;
+		margin-left: 400px;
+	}
+	.dica{
+		margin-top: 2950px;
+		margin-left: 150px;
+	}
+	.conecta{
+		margin-top: 3400px;
+	}
+} */
+
+/* @media(max-width: 918px){
+	.indique{
+		margin-left: 40px;
+		margin-top: 540px;
+	}
+	.novidade{
+		font-size: 40px;
+		margin-top:-350px;
+		margin-left: -90px;
+	}
+	.form{
+		max-width: 70%;
+		margin-top: -400px;
+		margin-left: -180px;
+	}
+	.inputUser{
+		margin-bottom: 1.1rem;
+		left: 10px;
+		padding: 15px;
+		margin-left: 30px;
+		width: 80%;
+		border-radius: 2px;
+		border-color: 	#DCDCDC;
+	}
+	.botao{
+		left: 250px;
+	}
+	.sombra{
+		max-width:0%;
+	}
+	.seta{
+		width: 25%;
+		top: 2400px;
+		left: 340px;
+	}
+	.dica{
+		font-size: 20px;
+		top: 2600px;
+		left: 80px;
+	}
+	.conecta{
+		width: 470px;
+		top: 3000px;
+	}
+} */
+
+/* @media(max-width: 800px){
+	.indique{
+		margin-left: 30px;
+		margin-top: 470px;
+	}
+	.novidade{
+		font-size: 30px;
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	.form{
+		max-width: 70%;
+		margin-top: -30px;
+		margin-left: -20px;
+	}
+	.inputUser{
+		margin-bottom: 1.1rem;
+		left: 10px;
+		padding: 15px;
+		margin-left: 30px;
+		width: 80%;
+		border-radius: 2px;
+		border-color: 	#DCDCDC;
+	}
+	.botao{
+		left: 200px;
+	}
+	.sombra{
+		max-width:0%;
+	}
+	.seta{
+		width: 30%;
+		margin-top: 50px;
+		margin-left: -45px;
+	}
+	.dica{
+		font-size: 30px;
+		top: -240px;
+		left: -130px;
+	}
+	.conecta{
+		width: 450px;
+		margin-top: 2500px;
+		margin-left: 150px;
+	}
+} */
+
+/* @media(max-width: 600px){
+	.indique{
+		margin-left: 25px;
+		margin-top: 350px;
+	}
+	.novidade{
+		font-size: 25px;
+		margin-top: -150px;
+		margin-left: -50px;
+	}
+	.form{
+		max-width: 70%;
+		margin-top: -250px;
+		margin-left: -40px;
+	}
+	.preencha{
+		font-size: 30px;
+		padding: 30px;
+	}
+	.inputUser{
+		margin-bottom: 1.1rem;
+		left: 10px;
+		padding: 15px;
+		margin-left: 30px;
+		width: 80%;
+		border-radius: 2px;
+		border-color: 	#DCDCDC;
+	}
+	.label1{
+		display: flex;
+		text-align: center;
+	}
+	.botao{
+		left: 150px;
+	}
+	.seta{
+		width: 25%;
+		margin-top: -150px;
+		margin-left: -90px;
+	}
+	.dica{
+		font-size: 20px;
+		margin-top: -130px;
+		margin-left: -49px;
+	}
+	.frase-dica{
+		font-size: 40px;
+	}
+	.conecta{
+		width: 400px;
+		margin-top: 2200px;
+		margin-left: 90px;
+	}
+} */
+
+/* @media(max-width: 500px){
+	.indique{
+		margin-left: 30px;
+		margin-top: 270px;
+	}
+	.novidade{
+		font-size: 24px;
+		margin-top: -300px;
+		margin-left: -100px;
+	}
+	.form{
+		max-width: 45%;
+		margin-top:-130px;
+		margin-left: 0px;
+	}
+	.inputUser{
+		display: flex;
+		margin-bottom: 1.1rem;
+		left: 10px;
+		padding: 15px;
+		margin-left: 20px;
+		width: 80%;
+		border-radius: 2px;
+		border-color: 	#DCDCDC;
+	}
+	.label1{
+		display: flex;
+		text-align: center;
+	}
+	.botao{
+		left: 90px;
+	}
+	.seta{
+		width: 30%;
+		margin-top: -10px;
+		margin-left: -50px;
+	}
+	.dica{
+		font-size: 10px;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+	.frase-dica{
+		font-size: 38px;
+	}
+	.conecta{
+		width: 320px;
+		margin-top: 2100px;
+		margin-left: 75px;
+	}
+} */

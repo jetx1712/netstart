@@ -1,0 +1,839 @@
+/* Cores */
+$color-bg-light-gray: #f2f5f5;
+$color-white2:#FEFEFE;
+$color-purple: #001df7;
+$grandiente-pink:linear-gradient(145deg, #b004bf, #d200e5, #ff00ce);
+
+.ideal-plan {
+  background: url(https://img.lovepik.com/background/20211021/large/lovepik-blue-banner-background-image_500452484.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: $font-family-intelo;
+
+  .ideal-plan-title {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 50px 0 50px;
+    width: 80%;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .ideal-plan-paragrafo {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    padding: 28px;
+    line-height: 0.9;
+    margin: 0;
+
+    span {
+      color: #F0D345;
+    }
+  }
+
+  .img-ideal-plan {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-width: 89%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ideal-plan-link {
+    color: $color-purple;
+    background: #F0D345;
+    text-transform: uppercase;
+    margin-bottom: auto;
+    text-decoration: none;
+    padding: 11px 15px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+    width: max-content;
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+/* teste de velocidade */
+
+.speed-test {
+  background: $gradient-orange;
+  position: relative;
+  padding: 50px 0;
+
+  .speed-test-img {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    max-width: 120%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .speed-test-title {
+    color: $color-purple;
+    font-family: $font-family-intelo;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .speed-test-link {
+    background-image: $gradiente-botao-header;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin: 20px auto;
+    border: 0;
+    border-radius: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 42px;
+    transition: .3s;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      transition: .3s;
+      z-index: -1;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: white;
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+
+      &:before {
+        position: absolute;
+        background: $color-pink;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .speed-test-text {
+    color: $color-purple;
+    font-family: $font-family-intelo;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+}
+
+// App conecta
+.app-conecta {
+  margin-top: 56px;
+  margin-bottom: 56px;
+
+  .app-conecta-container-img {
+    display: flex;
+    margin: 0 auto;
+
+    .app-conecta-img {
+      border-radius: 40px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .app-conecta-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .app-conecta-title,
+    .app-conecta-text,
+    .app-conecta-descricao {
+      color: $color-purple;
+
+      span {
+        color: $color-pink;
+      }
+    }
+
+    .app-conecta-title {
+      font-size: 48px;
+      margin: 0 70px 16px 0;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .app-conecta-text {
+      font-size: 20px;
+      margin: 16px 128px 16px 0;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    .app-conecta-descricao {
+      margin: 16px 128px 8px 0;
+      font-size: 18px;
+    }
+
+    .app-conecta-container-download {
+      display: flex;
+      justify-content: start;
+
+      .app-conecta-download-img {
+        width: 180px;
+        height: auto;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.blog-conecta {
+  background: $color-bg-light-gray;
+  padding: 56px 0;
+
+  .title-blog-conecta {
+    color: $color-purple;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .img-post-blog {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-post-blog {
+    padding: 10px;
+    display: flex;
+    height: 190px;
+    flex-direction: column;
+    align-items: center;
+
+    @include width(mg) {
+      height: 184px;
+    }
+    
+    @include width(md) {
+      height: 256px;
+    }
+    
+    @include width(sm) {
+      height: inherit;
+    }
+
+    @include width(xs) {
+      height: inherit;
+    }
+    .card-title-blog {
+      color: $color-purple;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .card-sinopse-blog {
+      color: $color-purple;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .card-button-blog {
+      background-image: linear-gradient(90deg, #e400f0 0,#6e057a 100%);
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      width: max-content;
+      color: #fff;
+      border: 0;
+      font-size: 15px;
+      padding: 9px 10px;
+      transition: .3s;
+      z-index: 1;
+      border-radius: 8px;
+      align-self: center;
+      justify-self: flex-end;
+      display: block;
+      margin-top: auto;
+      &:before {
+        content: '';
+        transition: .3s;
+        z-index: -1;
+        border-radius: 8px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+        box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+
+        &:before {
+          position: absolute;
+          background: $color-pink;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+  .ideal-plan {
+    .ideal-plan-title {
+      padding: 20px 0 30px 30px;
+      width: 100%;
+    }
+
+    .ideal-plan-paragrafo {
+      font-size: 20px;
+      width: 70%;
+      line-height: 1.1;
+      padding: 28px;
+    }
+  }
+
+  .speed-test {
+    padding: 40px 0;
+
+    .speed-test-img {
+      bottom: -20px;
+    }
+
+    .speed-test-title {
+      font-size: 48px;
+    }
+
+    .speed-test-link {
+      margin: 16px auto;
+      font-size: 20px;
+      padding: 12px 28px;
+    }
+
+    .speed-test-text {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  .app-conecta {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    .app-conecta-container-img {
+      .app-conecta-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .app-conecta-container-text {
+
+      .app-conecta-title {
+        font-size: 36px;
+        margin: 0 70px 12px 0;
+      }
+
+      .app-conecta-text {
+        font-size: 18px;
+        margin: 12px 128px 12px 0;
+      }
+
+      .app-conecta-descricao {
+        margin: 12px 128px 8px 0;
+        font-size: 16px;
+      }
+
+      .app-conecta-container-download {
+        .app-conecta-download-img {
+          width: 160px;
+        }
+      }
+    }
+  }
+  
+  .blog-conecta {
+    padding: 56px 0;
+
+    .title-blog-conecta {
+      margin-bottom: 48px;
+    }
+
+    .img-post-blog {
+      width: 100%;
+      height: 180px;
+    }
+
+    .card-post-blog {
+
+      .card-title-blog {
+        font-size: 18px;
+        margin-bottom: 3px;
+      }
+
+      .card-sinopse-blog {
+        font-size: 16px;
+      }
+
+      .card-button-blog {
+        font-size: 14px;
+        padding: 7px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+
+  .ideal-plan {
+    .ideal-plan-title {
+      color: #FFF;
+      line-height: 0.9;
+      padding: 20px 35px 0 20px;
+      font-size: 28px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .ideal-plan-paragrafo {
+      font-size: 18px;
+      width: 80%;
+      padding: 20px 40px;
+    }
+
+    .img-ideal-plan {
+      right: 20px;
+      max-width: 97%;
+    }
+
+    .ideal-plan-link {
+      padding: 8px 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .speed-test {
+    padding: 30px 0;
+
+    .speed-test-img {
+      max-width: 130%;
+      left: -20px;
+    }
+
+    .speed-test-title {
+      font-size: 40px;
+      margin: 8px auto;
+    }
+
+    .speed-test-link {
+      margin: 8px auto;
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+
+    .speed-test-text {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+
+  .app-conecta {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    .app-conecta-container-img {
+      .app-conecta-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .app-conecta-container-text {
+
+      .app-conecta-title {
+        font-size: 28px;
+        margin: 0 36px 12px 0;
+      }
+
+      .app-conecta-text {
+        font-size: 18px;
+        margin: 12px 84px 12px 0;
+      }
+
+      .app-conecta-descricao {
+        margin: 12px 0 8px 0;
+        font-size: 13px;
+      }
+
+      .app-conecta-container-download {
+        .app-conecta-download-img {
+          width: 90%;
+        }
+      }
+    }
+  }
+    
+  .blog-conecta {
+    padding: 56px 0;
+
+    .title-blog-conecta {
+      margin-bottom: 48px;
+    }
+
+    .img-post-blog {
+      width: 100%;
+      height: 180px;
+    }
+
+    .card-post-blog {
+
+      .card-title-blog {
+        font-size: 18px;
+        margin-bottom: 3px;
+      }
+
+      .card-sinopse-blog {
+        font-size: 16px;
+      }
+
+      .card-button-blog {
+        font-size: 14px;
+        padding: 7px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+  .ideal-plan {
+
+    .ideal-plan-title {
+      width: 100%;
+      padding: 30px 20px 0 20px;
+    }
+
+    .ideal-plan-paragrafo {
+      width: 100%;
+      padding: 30px 50px;
+    }
+
+    .ideal-plan-link {
+      font-size: 16px;
+    }
+
+    .col-ideal-plan {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+  }
+
+  .speed-test {
+    padding: 30px 0;
+
+    .speed-test-img-container {
+
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+
+      .speed-test-img {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    .speed-test-title {
+      font-size: 36px;
+      margin: 8px auto;
+    }
+
+    .speed-test-link {
+      margin: 16px auto;
+      font-size: 16px;
+      padding: 12px 36px;
+    }
+
+    .speed-test-text {
+      margin: 8px auto;
+      font-size: 16px;
+      padding: 0 50px;
+    }
+  }
+
+  .app-conecta {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    .app-conecta-container-img {
+      margin-top: 36px;
+      margin-bottom: 36px;
+
+      .app-conecta-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .app-conecta-container-text {
+
+      .app-conecta-title {
+        font-size: 28px;
+        margin: 0 36px 12px 0;
+      }
+
+      .app-conecta-text {
+        font-size: 18px;
+        margin: 12px 84px 12px 0;
+      }
+
+      .app-conecta-descricao {
+        margin: 12px 0 8px 0;
+        font-size: 13px;
+      }
+
+      .app-conecta-container-download {
+        .app-conecta-download-img {
+          width: 160px;
+        }
+      }
+    }
+  }
+    
+  .blog-conecta {
+    padding: 56px 0;
+
+    .title-blog-conecta {
+      margin-bottom: 48px;
+    }
+
+    .img-post-blog {
+      width: 100%;
+      height: 180px;
+    }
+    .container-post-blog {
+      justify-content: center;
+
+      .content-post-blog {
+        margin: 8px 0;
+      }
+
+      .card-post-blog {
+        padding: 15px;
+  
+        .card-title-blog {
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
+  
+        .card-sinopse-blog {
+          font-size: 16px;
+        }
+  
+        .card-button-blog {
+          font-size: 14px;
+          padding: 7px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .ideal-plan {
+
+    .ideal-plan-title {
+      width: 100%;
+      padding: 30px 20px 0 20px;
+    }
+
+    .ideal-plan-paragrafo {
+      width: 100%;
+      padding: 30px 50px;
+    }
+
+    .ideal-plan-link {
+      font-size: 16px;
+    }
+
+    .col-ideal-plan {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+  }
+
+  .speed-test {
+    padding: 30px 0;
+
+    .speed-test-img-container {
+
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+
+      .speed-test-img {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    .speed-test-title {
+      font-size: 36px;
+      margin: 8px auto;
+    }
+
+    .speed-test-link {
+      margin: 16px auto;
+      font-size: 16px;
+      padding: 12px 36px;
+    }
+
+    .speed-test-text {
+      margin: 8px auto;
+      font-size: 16px;
+      padding: 0 10%;
+    }
+  }
+
+  .app-conecta {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    .app-conecta-container-img {
+      margin-top: 36px;
+      margin-bottom: 36px;
+
+      .app-conecta-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .app-conecta-container-text {
+
+      .app-conecta-title {
+        font-size: 28px;
+        margin: 0 24px 12px 0;
+      }
+
+      .app-conecta-text {
+        font-size: 18px;
+        margin: 12px 48px 12px 0;
+      }
+
+      .app-conecta-descricao {
+        margin: 12px 0 8px 0;
+        font-size: 13px;
+      }
+
+      .app-conecta-container-download {
+        .app-conecta-download-img {
+          width: 90%;
+        }
+      }
+    }
+  }
+      
+  .blog-conecta {
+    padding: 56px 0;
+
+    .title-blog-conecta {
+      margin-bottom: 48px;
+    }
+  
+    .link-img-blog {
+      display: flex;
+      justify-content: center;
+      .img-post-blog {
+        width: 80%;
+        height: 220px;
+      }
+     }
+    .container-post-blog {
+      justify-content: center;
+
+      .content-post-blog {
+        margin: 8px 0;
+      }
+
+      .card-post-blog {
+        padding: 15px;
+  
+        .card-title-blog {
+          font-size: 18px;
+          margin-bottom: 3px;
+        }
+  
+        .card-sinopse-blog {
+          font-size: 16px;
+        }
+  
+        .card-button-blog {
+          font-size: 14px;
+          padding: 7px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+      
+  .blog-conecta {
+    padding: 56px 0;
+  
+    .link-img-blog {
+      .img-post-blog {
+        width: 80%;
+        height: 160px;
+      }
+     }
+  }
+
+}
+
+@media (max-width: 300px) {
+
+  .ideal-plan {
+    .ideal-plan-link {
+      font-size: 13px;
+    }
+  }
+}

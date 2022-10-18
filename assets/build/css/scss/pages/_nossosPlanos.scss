@@ -1,0 +1,247 @@
+.our-plans-presentation-container {
+  margin: 84px 0;
+  .our-plans-title {
+    color: $color-purple;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .our-plans-text-container {
+    color: $color-purple;
+    font-weight: 600;
+    text-align: center;
+    .our-plans-text {
+      margin: 0 84px;
+      font-size: 20px;
+      &:first-child {
+        margin-bottom: 24px;
+      }
+      .our-plans-text-emphasis {
+        color: $color-pink;
+      }
+    }
+  }
+}
+
+.differentials-container {
+  background: $gradient-reverse-orange;
+
+  .differentials-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin: 48px 0;
+    border-right: 1px solid #ff8400;
+
+    .differential-container-image {
+      width: 148px;
+      height: 138px;
+      margin-bottom: 36px;
+
+      .differentials-image {
+        max-width: 100%;
+        height: auto;
+        pointer-events: none;
+        user-select: none;
+      }
+    }
+
+    &:last-child {
+      border-right: 1px transparent;
+    }
+    .differentials-title,
+    .differentials-text {
+      color: $color-purple-extra;
+      line-height: 1;
+    }
+
+    .differentials-title {
+      font-size: 34px;
+      font-weight: 500;
+      margin-bottom: 36px;
+      &.second {
+        margin-bottom: 64px;
+      }
+    }
+    .differentials-text {
+      padding: 0 24px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+@include width(mg) {
+  .our-plans-presentation-container {
+    .our-plans-title {
+      font-size: 36px;
+    }
+    .our-plans-text-container {
+      .our-plans-text {
+        margin: 0 76px;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@include width(md) {
+  .our-plans-presentation-container {
+    .our-plans-title {
+      font-size: 36px;
+    }
+    .our-plans-text-container {
+      .our-plans-text {
+        margin: 0 64px;
+        font-size: 20px;
+      }
+    }
+  }
+  .differentials-container {
+    .differentials-inner-container {
+      margin: 48px 0;
+
+      .differential-container-image {
+        margin-bottom: 28px;
+        height: 124px;
+        .differentials-image {
+          width: 80%;
+          height: auto;
+        }
+      }
+
+      .differentials-title {
+        font-size: 24px;
+        margin-bottom: 36px;
+        &.second {
+          margin-bottom: 48px;
+        }
+      }
+      .differentials-text {
+        padding: 0 24px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include width(sm) {
+  .our-plans-presentation-container {
+    .our-plans-title {
+      font-size: 36px;
+    }
+    .our-plans-text-container {
+      .our-plans-text {
+        margin: 0 20px;
+        font-size: 18px;
+      }
+    }
+  }
+  .differentials-container {
+    .differentials-inner-container {
+      margin: 18px 0;
+
+      &:nth-child(2) {
+        border-right: 1px transparent;
+      }
+      .differential-container-image {
+        margin-bottom: 28px;
+        height: 108px;
+        .differentials-image {
+          width: 80%;
+          height: auto;
+        }
+      }
+
+      .differentials-title {
+        font-size: 24px;
+        margin-bottom: 36px;
+        &.second {
+          margin-bottom: 48px;
+        }
+      }
+      .differentials-text {
+        padding: 0 24px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include width(xs) {
+  .our-plans-presentation-container {
+    &:nth-child(4) {
+      border-bottom: 1px transparent;
+    }
+    .our-plans-title {
+      font-size: 130%;
+    }
+    .our-plans-text-container {
+      .our-plans-text {
+        padding: 0 10%;
+        margin: 0 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .differentials-container {
+    .w-90-mobile {
+      width: 90%;
+      margin: 0 auto;
+
+      .differentials-inner-container {
+        margin: 12px 0;
+        border-right: none;
+        border-bottom: 1px solid #ff8400;
+
+        &:nth-child(4) {
+          border-bottom: 1px transparent;
+        }
+
+        .differential-container-image {
+          margin-bottom: 28px;
+          height: 120px;
+          .differentials-image {
+            width: 80%;
+            height: auto;
+          }
+        }
+
+        .differentials-title {
+          font-size: 24px;
+          margin-bottom: 36px;
+          &.second {
+            margin-bottom: 48px;
+          }
+        }
+        .differentials-text {
+          padding: 0 24px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 103%;
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  align-items: center;
+  margin-left: -8px;
+
+  .next-slide,
+  .prev-slide {
+    color: #4f007d !important;
+    padding: 8px !important;
+    font-size: 36px !important;
+    line-height: 1 !important;
+    height: 100%;
+  }
+}

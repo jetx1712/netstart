@@ -1,0 +1,144 @@
+.svg-home-container {
+
+  .border-svg {
+    border-right: 1.5px solid #2626262e;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+
+    @include d(s) {
+      border-right: none;
+    }
+
+    @include d(m) {
+      border-right: none;
+    }
+
+    @include d(ml) {
+      border-right: none;
+    }
+
+    &:nth-child(4) {
+      border-right: transparent;
+    }
+
+    .icon-svg {
+      height: 120px;
+      width: 120px;
+      padding-bottom: 15px;
+
+      @include d(s) {
+        height: 80px;
+        width: 80px;
+      }
+
+      @include d(m) {
+        height: 90px;
+        width: 90px;
+      }
+
+      @include d(ml) {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    .link-svg {
+      text-decoration: none;
+      transition: .3s;
+      //font-family: $font-family-baloo;
+
+      .texto-legenda {
+        color: #001df7;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .3s;
+
+        @include d(s) {
+          font-size: 20px;
+        }
+
+        @include d(m) {
+          font-size: 24px;
+        }
+
+        @include d(ml) {
+          font-size: 28px;
+        }
+      }
+
+      &:hover {
+        // background: #9409da;
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      // background: #9409da;
+      text-decoration: none;
+
+      .texto-legenda {
+        color: #0084f7;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1999px) and (min-width: 768px) {
+  .svg-home-container {
+    .border-svg {
+      border-right: 1.5px solid #2626262e;
+
+      &:nth-child(4) {
+        border-right: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+  .svg-home-container {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    .border-svg {
+
+      &:nth-child(odd) {
+        border-right: 1.5px solid #2626262e;
+      }
+    }
+
+    .icon-svg {
+      height: 125px;
+      width: 125px;
+      padding-bottom: 15px;
+    }
+
+    .link-svg {
+      .texto-legenda {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .svg-home-container {
+    .border-svg {
+
+      &:nth-child(odd) {
+        border-right: 1.5px solid #2626262e;
+      }
+    }
+  }
+}
+
+//modal
+.overflow-overlay {
+  overflow: overlay !important;
+}

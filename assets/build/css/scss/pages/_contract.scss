@@ -1,0 +1,277 @@
+.contract-container {
+  margin: 84px 0;
+
+  .contract-individual-box {
+
+    display: flex;
+    flex-direction: column;
+
+    .contract-title {
+      color: $color-purple;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .contract-inner-title {
+      width: 100%;
+      color: #fff;
+      border: none;
+      padding: 10px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      background: $purple-gradient;
+      transition: .2s;
+
+      @include width(xs) {
+        font-size: 15px;
+      }
+    }
+
+    .label-contract {
+      padding-left: 8px;
+      color: $color-purple-extra;
+    }
+
+    .input-contract {
+      width: 100%;
+      display: block;
+      transition: .2s;
+      padding: 6px;
+      border-radius: 6px;
+      border: 2px solid $color-purple-extra;
+      font-size: 18px;
+      color: $color-purple-extra;
+      outline-color: $color-purple-extra;
+    }
+
+    .contract-disclaimer {
+      color: $color-purple-extra;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .span-warning {
+      float: right;
+      color: #d32121;
+      display: inline;
+    }
+
+    .hidden {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .your-choice-container {
+
+    .choice-outer-title {
+      margin: 56px 0 24px 0;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-purple-extra;
+    }
+
+    .choice-card-unique {
+      text-align: center;
+      margin: 32px 16px;
+      position: relative;
+      width: 318px;
+
+      .choice-box {
+        .choice-title-box {
+          background: $plan-orange-gradient;
+          position: relative;
+          border-top-right-radius: 16px;
+          border-top-left-radius: 16px;
+          font-weight: 800;
+          padding: 24px;
+          height: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include width(sm) {
+            height: 116px;
+          }
+
+          @include width(xs) {
+            height: 116px;
+          }
+
+          .choice-title {
+            color: $color-purple-extra;
+            font-size: 36px;
+            text-transform: capitalize;
+            line-height: 1;
+            z-index: 1;
+
+            @include width(xs) {
+              font-size: 30px;
+            }
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            right: 84px;
+            width: 30px;
+            height: 30px;
+            background: #feb83b;
+            transform: rotate(45deg);
+            user-select: none;
+            z-index: 0;
+            pointer-events: none;
+          }
+        }
+
+        .choice-body {
+          padding-top: 16px;
+          display: flex;
+          flex-direction: column;
+					height: 613px;
+          align-items: stretch;
+          justify-content: center;
+          border-bottom-right-radius: 18px;
+          border-bottom-left-radius: 18px;
+          background: $purple-gradient;
+          z-index: -1;
+
+          @include width(sm) {
+            height: 636px;
+          }
+
+          @include width(xs) {
+            height: 636px;
+          }
+
+          .choice-info-box {
+            color: #fff;
+            border-top: 1px solid $color-orange;
+            margin: 0 60px;
+            font-weight: 700;
+            padding: 20px 0;
+            text-transform: uppercase;
+
+            .choice-info-title {
+              display: block;
+              font-size: 18px;
+              line-height: 1;
+            }
+
+            .choice-info-value {
+              display: block;
+              font-size: 38px;
+              line-height: 1;
+            }
+
+            &:nth-child(1) {
+              border-top: 1px solid transparent;
+
+            }
+          }
+        }
+      }
+      &:after,
+      &:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 36px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        -webkit-box-shadow: 0 35px 20px #777;
+        -moz-box-shadow: 0 35px 20px #777;
+        box-shadow: 0 35px 20px #777;
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -o-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+        user-select: none;
+        pointer-events: none;
+      }
+  
+      &:after {
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+        right: 10px;
+        left: auto;
+      }
+    }
+  }
+  .contract-footer {
+    display: flex;
+    .contract-footer-inner-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &.container-left {
+        align-items: flex-end;
+        @include width(sm) {
+          align-items: center;
+        }
+        @include width(xs) {
+          align-items: center;
+        }
+      }
+      &.container-right {
+        align-items: start;
+        @include width(sm) {
+          align-items: center;
+        }
+        @include width(xs) {
+          align-items: center;
+        }
+      }
+      .footer-btn {
+        
+      }
+    }
+  }
+}
+
+.footer-btn {
+  color: #fff;
+  background: $button-choose-plan-gradient;
+  text-align: center;
+  padding: 9px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .2s;
+  margin-bottom: 7px;
+  border: none;
+  margin-bottom: 7px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $plan-orange-gradient;
+    color: #3e0081;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: gray;
+    background: linear-gradient( 90deg,#fcd64194 0,#ffaa3896 100%);
+  }
+}
+
+.term-link {
+  color: #3e0081;
+  &:visited {
+    color: #3e0081;
+  }
+}
